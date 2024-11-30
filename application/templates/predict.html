@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Predict Page
+{% endblock %}
+
+
+{% block content %}
+<form method="POST" enctype="multipart/form-data" style="margin: auto; width: 500px;">
+    <img id="image_login" class="text-center" src="static/logo pfa.png" style="margin-left: 20%;">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h5>How many  days ahead of today to forecast ?</h5>
+    {{ form.target_size}}
+    <br>
+    <br>
+    <br>
+    <h5>How much days in the past to take into account when predicting the future ?</h5>
+    {{ form.window_size}}
+    <br>
+    <br>
+    <br>
+    <h5>Number of Training Iterations:</h5>
+    {{ form.epochs}}
+    <br> 
+    <br>
+    <br>
+    <br>
+    {{ form.submit}}
+    <br>
+    <br>
+    <br>
+</form>
+
+{% endblock %}
+

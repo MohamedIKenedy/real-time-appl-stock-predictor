@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Vizulize & download Forecasted Data Page
+{% endblock %}
+
+
+{% block content %}
+<div id="div_vp"class="horizontal-div-container">
+    <form method="POST" style=" margin-bottom: 0px; margin: auto; width: 1250px;">
+        <img class="text-center" src="static/logo pfa.png" style="margin-left: 37%;">
+        <div id="chart2" style="margin-left: 10%">
+                
+        </div>
+        <div class="row justify-content-center">
+            <h2>Historical & Forecasted data of {{company_symbol}}</h2>
+            <div class="col-auto">
+                {% for table in tables %}
+                            {{ table|safe }}
+                {% endfor %}
+            </div>
+            <br>
+            <input type="submit" value="Download" class="btn btn-lg btn-block btn-primary" >
+            <br>
+            <br>
+            <br>
+        </div>
+    </form>
+</div>
+
+
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    var graph2 = {{ graph2JSON | safe }};
+    Plotly.plot("chart2", graph2, {})
+</script>
+{% endblock %}
+
+

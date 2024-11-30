@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Register Page
+{% endblock %}
+
+
+{% block content %}
+
+
+<body class="text-center">
+    <div class="container" >
+        <form method="POST" class="form-register" style="color:black"> 
+            <img class="login" src="static/logo pfa.png" alt="">
+            {{ form.hidden_tag() }}
+            <!-- modify image logo -->
+            <br>
+            <br>
+            <br>
+            <h2>
+                Please Create Your Account 
+            </h2>
+            <h5 id="h5_1">{{form.username.label()}}</h5>
+            {{form.username(class="form-control", placeholder = "User Name")}}
+            <br>
+            <h5 id="h5_2">{{form.email_address.label()}}</h5>
+            {{form.email_address(class="form-control", placeholder = "Email Address")}}
+            <br>
+            <h5 id="h5_3">{{form.password1.label()}}</h5>
+            {{form.password1(class="form-control", placeholder = "Password")}}
+            <br>
+            <h5 id="h5_4">{{form.password2.label()}}</h5>
+            {{form.password2(class="form-control", placeholder = "Confirm Password")}}
+            <br>
+            {{form.submit( class="btn btn-lg btn-block btn-primary" )}}
+            <br>
+
+            <div class="checkbox mb-3">
+                <h6>Already have an account?</h6>
+                <a class="btn btn-sm btn-secondary" href="{{ url_for('login_page') }}">Sign in</a>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+{% endblock %}

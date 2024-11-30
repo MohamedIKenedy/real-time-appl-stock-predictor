@@ -1,0 +1,243 @@
+body {
+background-color: white;
+color: black
+}
+
+select {
+width: 100%;
+padding: 16px 20px;
+border: none;
+border-radius: 4px;
+background-color: #f1f1f1;
+}
+
+/* input[type=button], input[type=submit], input[type=reset] {
+background-color: #3480fa;
+border: none;
+color: white;
+padding: 16px 32px;
+text-decoration: none;
+margin: 4px 2px;
+cursor: pointer;
+} */
+
+input[type=file]::file-selector-button {
+border: none;
+color: white;
+padding: .2em .9em;
+border-radius: .2em;
+background-color: #3480fa;
+transition: 1s;
+}
+
+input[type=file]::file-selector-button:hover {
+color: white;
+background-color: #3eaaf7;
+border: 2px solid #3480fa;
+}
+
+.navbar-custom {
+    background-color: #3480fa;
+    width: 100%;
+}
+    
+/* Modify brand and text color */
+.navbar-custom .navbar-brand,
+.nav-link {
+    color: #ffffff;
+}
+
+#h5_1{
+    position:relative;
+    left: -45px;
+    top:0px;
+    width:200px;
+    height:25px;
+    z-index:10;
+    text-align:center;
+    color: black;
+}
+#h5_2{
+    position:relative;
+    left: -30px;
+    top:0px;
+    width:200px;
+    height:25px;
+    z-index:10;
+    text-align:center;
+    color: black;
+}
+#h5_3{
+    position:relative;
+    left: -50px;
+    top:0px;
+    width:200px;
+    height:25px;
+    z-index:10;
+    text-align:center;
+    color: black;
+}
+
+#h5_4{
+    position:relative;
+    left: -13px;
+    top:0px;
+    width:200px;
+    height:25px;
+    z-index:10;
+    text-align:center;
+    color: black;
+}
+.loader-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+}
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #3480fa;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+}
+
+@keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+}
+
+.mystyle_forecasted_data {
+    margin-left: -20%; 
+}
+
+/* .mystyle_forecasted_data td th{
+    vertical-align: center;
+    padding: 5px;
+} */
+
+
+/* .mystyle_forecasted_data tr:nth-child(even) {
+    background: #E0E0E0;
+} */
+
+
+.mystyle_forecasted_data tr:hover {
+    background: silver;
+    cursor: pointer;
+}
+
+.mystyle {
+margin-left:auto; 
+margin-right:auto;
+margin-top: 175px;
+margin-bottom: auto;
+font-size: 11pt; 
+font-family: Arial;
+border-collapse: collapse; 
+border: 1px solid silver;
+text-align: center;
+
+}
+
+.mystyle td, th {
+    padding: 5px;
+}
+
+.mystyle tr:nth-child(even) {
+    background: #E0E0E0;
+}
+
+.mystyle tr:hover {
+    background: silver;
+    cursor: pointer;
+}
+
+
+#df_title {
+    position: relative;
+    left: auto;
+    top: 100px;
+    width: auto;
+    height: auto;
+    z-index:10;
+    text-align: center;
+    color: black;
+    font-weight:400;
+}
+
+
+#df_title2 {
+      position: relative;
+      margin: auto;
+      left: auto;
+      top: auto;
+      width: 500px;
+      height: auto;
+      z-index:10;
+      text-align:center;
+      color: black;
+      font-weight:400;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+#h5_scrap_title {
+    position:relative;
+    left: -100x;
+    top:0px;
+    width:200px;
+    height:25px;
+    z-index:10;
+    text-align:center;
+    color: black;
+}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Vizulize & Dowload Scrapped Data Page
+{% endblock %}
+
+
+{% block content %}
+<div id="div_df" class="horizontal-div-container">
+
+    <form method="POST" style="margin: auto; width: 700px;">
+        <img class="text-center" src="static/logo pfa.png" style="margin-left: 30%;">
+        <div id="chart1" style="margin-left: -17%">
+                
+        </div>
+        <div class="row justify-content-center">
+            <h2>Historical data of {{company_symbol}}</h2>
+            <div class="col-auto">
+                {% for table in tables %}
+                    {{ table|safe }}
+                {% endfor %}
+            </div>
+        </div>
+        <br>
+        <input type="submit" value="Download" class="btn btn-lg btn-block btn-primary">
+        <br>
+        <br>
+        <br>
+    </form>
+</div>
+
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    var graph1 = {{ graph1JSON | safe }};
+    Plotly.plot("chart1", graph1, {})
+</script>
+{% endblock %}
+
+

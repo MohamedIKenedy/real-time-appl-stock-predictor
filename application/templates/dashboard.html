@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<style>
+#main_block1,  #main_block2{
+    display: block; /* Useless, divs are display:block */
+    width: 100%;    /* Useless, display:block elements are width:100% by default */
+    height: 100%;   /* Fairly useless now, should take children's height */
+    font-size:0;    /* Force space between inline-block elements to be 0 */
+  }
+  #left_frame1, #left_frame1 {
+    width: 50%;
+  }
+  #right_frame1, #right_frame2 {
+    width: calc(50%);
+  }
+  #left_frame,#right_frame {
+    display: inline-block;
+    box-sizing: border-box;
+    height: calc(100vh - 50px);
+  }
+</style>
+{% endblock %}
+
+
+{% block title %}
+Dashboard
+{% endblock %}
+
+
+{% block content %}
+
+<iframe src="http://localhost:3000/d-solo/a8354074-10ca-40f7-aeee-c4a705d31ee6/big-data-apple-dashboard?orgId=1&from=1669849200000&to=1704927599000&theme=light&panelId=5" width="100%" height="150" frameborder="0"></iframe>
+<br>
+<div id="main_block1">
+    <iframe id="left_frame1" src="http://localhost:3000/d-solo/a8354074-10ca-40f7-aeee-c4a705d31ee6/big-data-apple-dashboard?orgId=1&from=1671058800000&to=1706828399000&theme=light&panelId=2" width="50%" height="400" frameborder="0"></iframe>
+    <iframe id="right_frame1" src="http://localhost:3000/d-solo/a8354074-10ca-40f7-aeee-c4a705d31ee6/big-data-apple-dashboard?orgId=1&from=1669849200000&to=1704927599000&theme=light&panelId=1" width="50%" height="400" frameborder="0"></iframe>    
+</div>
+
+<div id="main_block2">
+    <iframe id="left_frame2" src="http://localhost:3000/d-solo/a8354074-10ca-40f7-aeee-c4a705d31ee6/big-data-apple-dashboard?orgId=1&from=1671058800000&to=1702321514479&theme=light&panelId=3" width="50%" height="400" frameborder="0"></iframe>
+    <iframe id="right_frame2" src="http://localhost:3000/d-solo/a8354074-10ca-40f7-aeee-c4a705d31ee6/big-data-apple-dashboard?orgId=1&from=1669849200000&to=1704927599000&theme=light&panelId=6" width="50%" height="400" frameborder="0"></iframe> 
+</div>
+
+{% endblock %}
