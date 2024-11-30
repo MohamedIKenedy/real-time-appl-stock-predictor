@@ -36,14 +36,14 @@ This project leverages **sentiment analysis** on Reddit comments to predict **Ap
 ### 1. **Main Dashboard**
 The main dashboard showcases stock trends, sentiment distributions, and detailed metrics.
 
-![Dashboard Overview](./path/to/dashboard-overview.png)
+![Dashboard Overview](App_Images/ApplStockAnalyzer.png)
 
 ---
 
 ### 2. **Data Explorer**
 The Data Explorer enables dynamic queries of stock and sentiment data, providing flexibility for analysis.
 
-![Data Explorer](./path/to/data-explorer.png)
+![Data Explorer](App_Images/Database.png)
 
 ---
 
