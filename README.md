@@ -41,7 +41,7 @@ The main dashboard showcases stock trends, sentiment distributions, and detailed
 ---
 
 ### 2. **Data Explorer**
-The Data Explorer enables dynamic queries of stock and sentiment data, providing flexibility for analysis.
+The Data Explorer enables dynamic queries of stock and sentiment data, providing flexibility for analysis through influxDB and grafana's intuitive tools and UI.
 
 ![Data Explorer](App_Images/Database.png)
 
