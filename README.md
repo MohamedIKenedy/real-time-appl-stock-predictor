@@ -1,5 +1,5 @@
 
-# Real-Time AAPL Stock Predictor Using Sentiment Analysis
+# Real-Time AAPL Stock Predictor Using Sentiment Analysis ! Tune in for an exciting blog on my website coming soon !!
 
 This project leverages **sentiment analysis** on Reddit comments to predict **Apple's (AAPL)** stock price in real-time. By analyzing the sentiment of comments on social media and correlating it with historical stock data, this application provides meaningful insights into stock trends.
 
