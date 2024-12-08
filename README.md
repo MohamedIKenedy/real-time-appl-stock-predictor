@@ -117,3 +117,6 @@ Feel free to contribute to this project by submitting a pull request or opening 
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+
+Check out the notebooks related to APPL stock market time series forecasting!!!
